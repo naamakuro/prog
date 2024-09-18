@@ -1,0 +1,230 @@
+<!DOCTYPE html> 
+<html lang="lv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>form3.html</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        table {
+            vertical-align: top;
+            width: 100%;
+            border-collapse: collapse;
+            margin-left: 10px;
+            
+        }
+        
+        td {
+            text-align: left;
+            vertical-align: top;
+        }
+        
+         
+        
+        
+        a {
+            text-decoration: none;
+            display: inline-block; 
+            margin: 0;
+            padding: 0; 
+        }
+        
+        .underline-thin {
+            display: inline-block;
+            border-bottom: 2px solid #0089f8;
+            padding-bottom: 1px;
+            line-height: 0.5;
+        }
+        
+        .full-width-line {
+            border-top: 1.5px solid lightgrey;
+            width: 100vw; 
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw; 
+            margin-top: 20px;
+            
+            
+        }
+            
+        
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 35px;
+            vertical-align: top;
+            margin: 0 auto;
+        }
+        .table-text {
+        font-family: Verdana, Geneva; 
+        font-size: 10px; 
+        color: black;  
+        text-align: center;
+        margin: 0 auto;
+        
+        }
+        
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td style="padding-top: 35px; padding-left: 35px;">
+                <a href="https://naamakuro.github.io/prog/form1.html" 
+                   style="font-family: Verdana, Geneva; font-size: 9px; font-weight: 500; color: Black;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" 
+                         width="10" 
+                         height="10" 
+                         style="margin-right: 10px; position: relative; top: 2px;">
+                    Atpakaļ uz sākumlapu
+                </a>
+
+                <div style="font-family: Verdana, Geneva; font-size: 28px; color: #0089f8; margin-top: 15px;">
+                    Publiskā datubāze
+                </div>
+
+                <div class="underline-thin" 
+                     style="font-family: Verdana, Geneva; font-size: 11px; color: Black; margin-top: 25px;">
+                    Šajā datubāzē Tu vari apskatīt pieejamās vielas un aprīkojumu
+                </div>
+
+                <div style="margin-top: 30px; display: flex; gap: 8px;">
+                    <div style="position: relative; display: inline-block;">
+                        <input type="text" 
+                               name="query" 
+                               placeholder="Search" 
+                               required
+                               style="font-family: Verdana, Geneva; font-size: 10px; padding: 5px 20px; padding-left: 30px; border-radius: 50px; border: 1px solid #ccc; width: 160px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" 
+                             alt="search icon" 
+                             style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; filter: grayscale(100%);">
+                    </div>
+
+                    <button style="padding: 5px 15px; border-radius: 50px; background-color: #0089f8; color: white; border: none; font-family: Verdana, Geneva; font-size: 10px;">
+                        Rādīt visu
+                    </button>
+                    <button style="padding: 5px 15px; border-radius: 50px; background-color: white; color: #0089f8; border: 1px solid #0089f8; font-family: Verdana, Geneva; font-size: 10px;">
+                        Rādīt vielas
+                    </button>
+                    <button style="padding: 5px 15px; border-radius: 50px; background-color: white; color: #0089f8; border: 1px solid #0089f8; font-family: Verdana, Geneva; font-size: 10px;">
+                        Rādīt aprīkojumu
+                    </button>
+                </div>
+               
+               
+            
+                
+              
+            </td>
+           
+        </tr>
+       </table>
+      
+     
+               <div class="full-width-line"></div>
+               
+      <div class="table-container">
+         <table border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse; margin: 0 auto; vertical-align: middle">
+              <colgroup>
+                    <col style="width: 5%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 15%;">
+                    <col style="width: 20%;">
+                    <col style="width: 10%;">
+                    <col style="width: 30%;">
+                </colgroup>
+                
+                 <thead>
+                    <tr style="font-family: Verdana, Geneva; font-size: 10px; background-color: #001b36; color: white;   text-align: left; ">
+                        <th>ID</th>
+                        <th>Nosaukums</th>
+                        <th>Tips</th>
+                        <th>Apakštips</th>
+                        <th>Skaits</th>
+                        <th>Svars</th>
+                        <th>Komentāri</th>
+                    </tr>
+                </thead>
+                 <tbody>
+                <tr  class="table-text"
+                    
+                     style="border-bottom: 7px solid #f6f6f6;">
+                    <td>KL1042724</td>
+                    <td>Katalizators</td>
+                    <td>Aprikojums</td>
+                    <td>Trauks</td>
+                    <td>23</td>
+                    <td> </td>
+                    <td>Daži komentāri</td>
+                </tr>
+                <tr class="table-text"
+                    style="border-bottom: 7px solid #f6f6f6;">
+                    <td>KL1042723</td>
+                    <td>Birete</td>
+                    <td>Aprīkojums</td>
+                    <td>Trauks</td>
+                    <td>20</td>
+                    <td>  </td>
+                    <td>Daži komentāri</td>
+                </tr>
+                <tr class="table-text"
+                    style="border-bottom: 7px solid #f6f6f6;">
+                    <td>KL1042742</td>
+                    <td>HCl</td>
+                    <td>Viela</td>
+                    <td>Skābe</td>
+                    <td>19</td>
+                    <td>40</td>
+                    <td>Daži komentāri</td>
+                </tr>
+                <tr class="table-text"
+                    style="border-bottom: 7px solid #f6f6f6;">
+                    <td>KL1042725</td>
+                    <td>Kolba</td>
+                    <td>Aprīkojums</td>
+                    <td>Trauks</td>
+                    <td>20</td>
+                    <td> </td>
+                    <td>Daži komentāri</td>
+                </tr>
+                <tr class="table-text"
+                    style="border-bottom: 7px solid #f6f6f6;">
+                    <td>5KL10427534</td>
+                    <td>Fe</td>
+                    <td>Viela</td>
+                    <td>Metāls</td>
+                    <td>48</td>
+                    <td>10</td>
+                    <td>Daži komentāri</td>
+                </tr>
+                <tr class="table-text"
+                    style="border-bottom: 7px solid #f6f6f6;">
+                    <td>KL1442721</td>
+                    <td>Na</td>
+                    <td>Viela</td>
+                    <td>Metāls</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>Daži komentāri</td>
+                </tr>
+            </tbody>
+         </table>
+    
+   <a href="error_report.html">
+        <button style="position: fixed; bottom: 20px; right: 20px; background-color: #ff8576; color: white; border: none; padding: 4px 12px;">
+            Ziņot pat kļūdu
+        </button>
+    </a>
+
+  </body>
+</html>
